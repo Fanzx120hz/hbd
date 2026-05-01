@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Ulang Tahun Spesial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="app">
+        <!-- Layar Amplop -->
+        <div id="amplopScreen" class="screen active">
+            <div class="envelope-wrapper">
+                <div class="envelope">
+                    <div class="flap"></div>
+                    <div class="body"></div>
+                    <div class="heart">🎁</div>
+                </div>
+                <p class="instruction">✨ Klik amplop untuk membuka! ✨</p>
+            </div>
+        </div>
+
+        <!-- Layar Kue & Lilin -->
+        <div id="cakeScreen" class="screen">
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="layer layer-top"></div>
+                    <div class="layer layer-middle"></div>
+                    <div class="layer layer-bottom"></div>
+                    <div class="plate"></div>
+                    <div class="candle" id="candle">
+                        <div class="flame" id="flame"></div>
+                        <div class="wick"></div>
+                        <div class="stick"></div>
+                    </div>
+                </div>
+                <p class="blow-text" id="blowText">🎂 Tiup lilinnya! 🎂</p>
+                <button id="blowBtn" class="action-btn">💨 Tiup Lilin</button>
+            </div>
+        </div>
+
+        <!-- Layar Potong Kue -->
+        <div id="cutScreen" class="screen">
+            <div class="cut-container">
+                <div class="cake-whole" id="cakeWhole">
+                    <div class="cake-piece"></div>
+                    <div class="cake-piece"></div>
+                    <div class="cut-line"></div>
+                </div>
+                <button id="cutBtn" class="action-btn">🔪 Potong Kue</button>
+            </div>
+        </div>
+
+        <!-- Layar Ucapan Akhir -->
+        <div id="messageScreen" class="screen">
+            <div class="message-card">
+                <h1>🎉 Selamat Ulang Tahun! 🎉</h1>
+                <p class="wish">✨ Semoga panjang umur ✨</p>
+                <p class="wish">💝 Sehat selalu dan bahagia selamanya 💝</p>
+                <button id="replayBtn" class="action-btn">🎂 Ulang Tahun Lagi</button>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="fireworksCanvas"></canvas>
+    
+    <script src="script.js"></script>
+</body>
+</html>
